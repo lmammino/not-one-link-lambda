@@ -17,7 +17,7 @@ Which will redirect the user to the same product page but on the closest Amazon 
 https://www.amazon.co.uk/dp/1839214112?tag=loige09-21
 ```
 
-Basically redirecting the user to amazon.co.uk (and replacing the affiliate link).
+Basically redirecting the user to amazon.co.uk (and replacing the affiliate tag).
 
 
 This project is based on [`not-one-link`](https://github.com/lmammino/not-one-link/). Check it out for a comprehensive description of the motivation behind this project.
