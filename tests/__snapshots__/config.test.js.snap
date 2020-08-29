@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a configuration object with no whitelist if no WHITELIST is given 1`] = `
+Object {
+  "dbPath": "some-db-path",
+  "tagsMap": Object {
+    "www.amazon.ae": "aetag",
+    "www.amazon.ca": undefined,
+    "www.amazon.cn": undefined,
+    "www.amazon.co.jp": undefined,
+    "www.amazon.co.uk": undefined,
+    "www.amazon.com.au": undefined,
+    "www.amazon.com.br": undefined,
+    "www.amazon.com.mx": undefined,
+    "www.amazon.com.tr": undefined,
+    "www.amazon.de": "detag",
+    "www.amazon.es": undefined,
+    "www.amazon.fr": undefined,
+    "www.amazon.in": undefined,
+    "www.amazon.it": undefined,
+    "www.amazon.nl": undefined,
+    "www.amazon.sg": undefined,
+  },
+  "whitelist": undefined,
+}
+`;
+
+exports[`should crete a configuration object from env vars 1`] = `
+Object {
+  "dbPath": "some-db-path",
+  "tagsMap": Object {
+    "www.amazon.ae": "aetag",
+    "www.amazon.ca": undefined,
+    "www.amazon.cn": undefined,
+    "www.amazon.co.jp": undefined,
+    "www.amazon.co.uk": undefined,
+    "www.amazon.com.au": undefined,
+    "www.amazon.com.br": undefined,
+    "www.amazon.com.mx": undefined,
+    "www.amazon.com.tr": undefined,
+    "www.amazon.de": "detag",
+    "www.amazon.es": undefined,
+    "www.amazon.fr": undefined,
+    "www.amazon.in": undefined,
+    "www.amazon.it": undefined,
+    "www.amazon.nl": undefined,
+    "www.amazon.sg": undefined,
+  },
+  "whitelist": Array [
+    "https://www.amazon.co.uk/dp/1839214112/",
+    "https://www.amazon.com/dp/B08CHMDKW2/",
+  ],
+}
+`;
+
+exports[`should use a default db path if no one is specified 1`] = `
+Object {
+  "dbPath": "data/GeoLite2-Country.mmdb",
+  "tagsMap": Object {
+    "www.amazon.ae": undefined,
+    "www.amazon.ca": undefined,
+    "www.amazon.cn": undefined,
+    "www.amazon.co.jp": undefined,
+    "www.amazon.co.uk": undefined,
+    "www.amazon.com.au": undefined,
+    "www.amazon.com.br": undefined,
+    "www.amazon.com.mx": undefined,
+    "www.amazon.com.tr": undefined,
+    "www.amazon.de": undefined,
+    "www.amazon.es": undefined,
+    "www.amazon.fr": undefined,
+    "www.amazon.in": undefined,
+    "www.amazon.it": undefined,
+    "www.amazon.nl": undefined,
+    "www.amazon.sg": undefined,
+  },
+  "whitelist": undefined,
+}
+`;

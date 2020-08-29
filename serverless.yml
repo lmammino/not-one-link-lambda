@@ -1,0 +1,37 @@
+service: not-one-link
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 512
+  timeout: 6
+  versionFunctions: false
+
+functions:
+  not-one-link:
+    handler: src/index.handler
+    description: not-one-link Amazon url rewriter
+    environment:
+      DB_PATH: ${env:DB_PATH,'data/GeoLite2-Country.mmdb'}
+      WHITELIST: ${env:WHITELIST,''} # list of URLS that are accepted (";" separated). If blank all amazon URLs are accepted
+      # Affiliate link tags for various countries
+      TAG_AE: ${env:TAG_AE,''}
+      TAG_CA: ${env:TAG_CA,''}
+      TAG_CN: ${env:TAG_CN,''}
+      TAG_JP: ${env:TAG_JP,''}
+      TAG_GB: ${env:TAG_GB,''}
+      TAG_AU: ${env:TAG_AU,''}
+      TAG_BR: ${env:TAG_BR,''}
+      TAG_MX: ${env:TAG_MX,''}
+      TAG_TR: ${env:TAG_TR,''}
+      TAG_DE: ${env:TAG_DE,''}
+      TAG_ES: ${env:TAG_ES,''}
+      TAG_FR: ${env:TAG_FR,''}
+      TAG_IN: ${env:TAG_IN,''}
+      TAG_IT: ${env:TAG_IT,''}
+      TAG_NL: ${env:TAG_NL,''}
+      TAG_SG: ${env:TAG_SG,''}
+    events:
+      - http:
+          path: /
+          method: get
