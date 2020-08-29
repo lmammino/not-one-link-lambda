@@ -46,7 +46,7 @@ npm install
 
 Then run the deployment with:
 
-``bash
+```bash
 npm run deploy
 ```
 
