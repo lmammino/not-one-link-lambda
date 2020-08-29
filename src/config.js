@@ -18,7 +18,8 @@ module.exports = function getConfigFromEnv () {
     'www.amazon.in': process.env.TAG_IN,
     'www.amazon.it': process.env.TAG_IT,
     'www.amazon.nl': process.env.TAG_NL,
-    'www.amazon.sg': process.env.TAG_SG
+    'www.amazon.sg': process.env.TAG_SG,
+    'www.amazon.com': process.env.TAG_US
   }
   const whitelist = process.env.WHITELIST ? process.env.WHITELIST.split(';').map(u => u.trim()) : undefined
 

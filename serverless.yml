@@ -31,6 +31,7 @@ functions:
       TAG_IT: ${env:TAG_IT,''}
       TAG_NL: ${env:TAG_NL,''}
       TAG_SG: ${env:TAG_SG,''}
+      TAG_US: ${env:TAG_US,''}
     events:
       - http:
           path: /

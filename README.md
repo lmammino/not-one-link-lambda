@@ -102,6 +102,7 @@ Amazon associates (Amazon's affiliate program) allows you to earn referral credi
   - `TAG_IT`: Affiliate tag for `www.amazon.it`
   - `TAG_NL`: Affiliate tag for `www.amazon.nl`
   - `TAG_SG`: Affiliate tag for `www.amazon.sg`
+  - `TAG_US`: Affiliate tag for `www.amazon.com`
 
 
 ### Whitelist only specific Amazon URLs
