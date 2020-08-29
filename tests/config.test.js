@@ -7,7 +7,7 @@ it('should crete a configuration object from env vars', async () => {
     DB_PATH: 'some-db-path',
     TAG_AE: 'aetag',
     TAG_DE: 'detag',
-    WHITELIST: 'https://www.amazon.co.uk/dp/1839214112/;https://www.amazon.com/dp/B08CHMDKW2/'
+    WHITELIST: 'https://www.amazon.com/dp/1839214112?tag=loige0e-20;https://www.amazon.com/dp/B01D8HIIFU?tag=loige0e-20;https://www.amazon.com/dp/B08CHMDKW2?tag=loige0e-20'
   }
 
   const config = getConfigFromEnv()
